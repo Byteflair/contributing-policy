@@ -85,3 +85,19 @@ Avoid comments in code. The code documentation should be comprised of code meta 
 
 The minimum quality gate is proving the build does not break
 
+## Kanban
+
+A project kanban board is shared among the team. The board contains the following columns:
+
+- Backlog: Unprioritized issues, not ready for picking
+- Prioritized: Prioritized and well defined issues ready for development
+- In progress: Issues with the corresponding open pull request that are being worked on
+- Done: Issues closed with the corresponding pull request merged to the trunk
+
+1. Issues are created and added to the backlog by any stakeholder.
+1. The product owner prioritizes and refines issues in the backlog.
+1. The product owner adds issues to the Prioritized column declaring an interest in providing a solution for an issue.
+1. Developers and product owner split up issues as needed adding them to the prioritized column.
+1. Developers pick issues from the prioritiezed column and start working on them
+1. When a pull request is successfully merged to the trunk, developers close the corresponding issue
+
