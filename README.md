@@ -49,15 +49,34 @@ Optionally, a discussion of alternatives that were considered.
 
 The first line should be used to explain the value of the changes, rather than focussing on the implementation details. It’s always useful to explain what you’ve changed and why you’ve changed it. In some cases, it also helps, to provide further context such as explaining alternative solutions you’ve ruled out or providing external references.
 
+### Review history
+
+When developing your code, you are bound to change direction or even make mistakes (most commonly introducing typos or bugs). 
+
+Before you share your commit history, it’s important to think about what is useful information for someone else to read. You shouldn’t think of your Git history as a “truthful” log of what you worked on step-by-step. Just as we refactor code, we should refactor our commits before sharing them with others.
+
+The power of Git makes it simple to re-order, reword and refactor your commits until they tell the clearest story possible.
+
+Use `git rebase --interactive`.
+
 ## Pull requests
 
 1. Pull requests are used to track progress, discuss solutions and review code
-1. Create the corresponding pull request for an issue as soon as possible and explicitly reference the issue in the pull request
+1. Pull requests reference the issue they provide a solution for
+1. Create the corresponding pull request for an issue as you start working on the solution
 1. Immediatly after creating the pull request, involve team members for reviewing even if there is yet nothing significant to review
 1. With the pull request open and team members involved you can discuss solutions to the problem or request feedback as needed without waiting for the final solution
 1. Pull requests with a lifespan bigger than the contribution cadence may indicate a problem (bad issue sizing, difficult problem, paralysis by analysis, ...)
 
+## Code documentation
+
+Avoid comments in code. The code documentation should be comprised of code meta data captured in the repository, issues and pull requests:
+
+- From the code we can trace the commit that introduced that code which contains a reference to the issue and the value delivered by this contribution
+- From the commit we can trace the issue to gather macro information about the problem it solves, giving further context to the commit
+- From the issue we can trace the pull request to track the decisions made to come up with a specific solution completing the the context of the code
+
 ## CI System
 
-1. The minimum quality gate is proving the build does not break
+The minimum quality gate is proving the build does not break
 
