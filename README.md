@@ -33,8 +33,12 @@ Large commits can be difficult to read, especially when they contain changes whi
 
 Explain why you’ve made the change in the first place. This is the perfect opportunity to reflect on what you’re doing and to provide context – whether it’s to satisfy a user requirement, to fix a bug or to make another change easier to make in the future.
 
+Use the following template for commit messages.
+
 ```
 Issue Reference - Short one line title.
+
+Value delivered
 
 Description of what the change does
 
@@ -42,6 +46,8 @@ An explanation of why the change is being made.
 
 Optionally, a discussion of alternatives that were considered.
 ```
+
+The first line should be used to explain the value of the changes, rather than focussing on the implementation details. It’s always useful to explain what you’ve changed and why you’ve changed it. In some cases, it also helps, to provide further context such as explaining alternative solutions you’ve ruled out or providing external references.
 
 ## Pull requests
 
