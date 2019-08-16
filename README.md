@@ -16,10 +16,15 @@ We use [trunk based development](https://trunkbaseddevelopment.com/). This means
 ## Issues
 
 1. Issues define a problems to be solved
-1. Issues should be broken down into samller problems that fit the contribution cadence resulting in child issues
-1. Issues focus on defining the problem, not the solution
-1. Each issue is fixed by a pull request
-1. One issue, one feature branch, one pull request
+1. Issues should be split up into smaller problems that fit the contribution cadence resulting in child issues
+1. Issues provide a discussion area to track the definition and break down of a problem, not its solution
+1. Each issue is fixed by a pull request in a single purpose feature branch
+
+By splitting up an issue, you not only reduce the pain of merging each branch, you also deliver value sooner and make your repository history more readable.
+
+## Branches
+
+We use single purpose feature branches. If a feature branch is delivering unrelated value or has multiple purposes, it indicates that the corresponding issue needs to be broken down.
 
 ## Commits
 
