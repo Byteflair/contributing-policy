@@ -6,7 +6,7 @@ We use [trunk based development](https://trunkbaseddevelopment.com/). This means
 
 1. One master repository with a single branch, the trunk, that is regularly deployed to production
 1. Trunk is always releasable
-1. Trunk contains work in progress. Code needs to implement refactoring techniques, such as feature flags, to provide backward compatibility until a work in progress features are fully developed.
+1. Trunk contains work in progress. Code needs to implement refactoring techniques, such as [branch by abstraction](https://www.branchbyabstraction.com/) or [feature flags](https://martinfowler.com/articles/feature-toggles.html), to provide backward compatibility until a work in progress features are fully developed and release ready.
 1. The team regularly contributes incremental code to the trunk in a contribution candence of no more than a couple of days
 1. Developers work on forked repositories on feature branches whose life is determined by the contribution cadence
 1. Code is shared with the team via pull requests
